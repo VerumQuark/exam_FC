@@ -3,24 +3,72 @@
   display: flex
   flex-direction: column
   justify-content: flex-start
+  height: 115px
   width: 100%
+  font-family: 'Raleway', sans-serif
+  -webkit-box-shadow: 0 0 12px 6px rgba(0,0,0,0.1)
+  -moz-box-shadow: 0 0 12px 6px rgba(0,0,0,0.1)
+  box-shadow: 0 0 12px 6px rgba(0,0,0,0.1)
+  @media (max-width: 760px)
+    height: 0
+
+  .widthContainer
+    width: 1150px
+    display: flex
+    @media(max-width: 1200px)
+      width: 970px
+    @media(max-width: 1150px)
+      width: 100%
 
   .navContainer
-    width: 100%
     margin: 0 auto
+    padding: 0 15px
     display: flex
-    justify-content: space-around
+    justify-content: space-between
     align-items: center
-    border-bottom: 1px solid #ebebeb
-    @media(max-width: 920px)
-      justify-content: center
-    @media(max-width: 700px)
-      justify-content: flex-start
+    @media(max-width: 1150px)
+      padding: 0
+    @media(max-width: 760px)
+      z-index: 1000
+      flex-direction: column
+      align-items: normal
 
-    .logo
-      align-self: flex-end
-      @media(max-width: 920px)
-        display: none
+    .logoMenuContainer
+      @media(max-width: 760px)
+        height: 49px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        margin-top: 20px
+
+      a
+
+        .logo
+          align-self: flex-end
+          width: 12.7vw
+          max-width: 165px
+          min-width: 100px
+          box-sizing: border-box
+          @media(max-width: 1150px)
+            padding-left: 15px
+          @media(max-width: 760px)
+            padding-left: 0
+
+      .hamburgerContainer
+        align-self: center
+
+        .HamburgerBtn
+          width: 27px
+          background-color: #666
+          margin-top: 4px
+          border: #666 1px solid
+          border-radius: 20px
+          display: block
+          margin-right: 16px
+          box-sizing: border-box
+          @media (min-width: 760px)
+            display: none
+
 
     .startContestBtn
       text-align: center
@@ -32,6 +80,10 @@
       font-size: 14px
       font-weight: 400
       margin-bottom: 10px
+      @media (max-width: 920px)
+        margin-right: 10px
+      @media(max-width: 760px)
+        display: none
 
       &:hover
         color: white
@@ -39,12 +91,20 @@
 
     .leftNav
       display: flex
-      @media(max-width: 750px)
+      @media(max-width: 760px)
+        width: 100%
         align-items: center
         flex-direction: column
 
       .nav
         display: flex
+        transition: max-height .5s
+        max-height: 100vh
+        overflow: hidden
+        @media(max-width: 760px)
+          width: 100%
+          background-color: white
+          border-bottom: 1px solid #ccc
 
         ul
           margin: 0
@@ -54,19 +114,35 @@
           align-items: center
           @media(max-width: 920px)
             padding: 0
-          @media(max-width: 700px)
+          @media (max-width: 760px)
+            border-top: 2px solid #ddd
+            padding: 20px 0 20px 15px
+            margin-left: 30px
+            width: 100%
             flex-direction: column
             align-items: flex-start
 
-          &:last-child li
-            ul
-              width: 200px
+          .menuPhone
+            @media (min-width: 760px)
+              display: none
+
+            a
+              text-decoration: none
+              display: flex
+              align-items: center
+
+              span
+                padding-left: 15px
 
           li
             display: flex
             align-items: center
             justify-content: flex-start
             margin-right: 30px
+            @media(max-width: 1150px)
+              margin-right: 5px
+            @media(max-width: 830px)
+              margin-right: 0
             @media(max-width: 700px)
               width: 100%
               padding: 0 15px
@@ -80,8 +156,9 @@
                 position: absolute
                 border: 1px solid #eee
                 z-index: 1000
-                top: 130px
+                top: 70px
                 background-color: white
+                box-shadow: 0 6px 12px 0 rgba(0,0,0,0.176)
                 @media(max-width: 700px)
                   top: auto
                   left: 145px
@@ -91,12 +168,14 @@
               margin: 0
               width: 160px
               display: none
+              border: 1px solid #dadada
 
-              .last
-                width: 100%
-                padding-top: 8px
-                box-sizing: border-box
-                border-top: 1px solid aquamarine
+              .divider
+                height: 1px
+                margin: 9px 0
+                padding: 0
+                overflow: hidden
+                background-color: #e5e5e5
 
               li
                 box-sizing: border-box
@@ -106,38 +185,74 @@
                 justify-content: flex-start
 
                 &:hover
-                  background: #f9fafb
+                  background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%)
+
+                  a
+                    color: #f27e51
 
                 a
-                  font-size: 12px
+                  font-size: 11px
                   text-decoration: none
-                  color: #333
-
-                  &:hover
-                    color: #f27e51
+                  text-transform: uppercase
+                  color: #666
 
             span
               color: #495d8b
-              font-size: 15px
-              font-weight: 300
+              font-size: 13px
+              font-weight: 500
               padding: 15px 0
+              text-transform: uppercase
+              @media (max-width: 1000px)
+                font-size: 12px
+                font-family: sans-serif
+                text-shadow: 0 -1px 0 rgba(0, 0, 0, .25)
+              @media (max-width: 760px)
+                color: #333
+                padding: 10px 0
+                letter-spacing: 1px
 
-  .loginSignnUpHeaders
-    margin-top: 30px
+              a
+                color: #333
+
+            .menuLogin
+              font-size: 16px
+              @media (min-width: 760px)
+                display: none
+
+              a
+                font-size: 12px
+
+      .closedNavMenu
+        max-height: 0
+
+  .loginSignUpHeaders
     display: flex
     flex-direction: row
     align-items: center
     justify-content: space-around
-    border: 1px solid #ebebeb
+    border-bottom: 1px solid #ebebeb
     margin-bottom: 13px
+    height: 39px
+    @media (max-width: 760px)
+      display: none
+
+    .numberFlexContainer
+      display: flex
+      justify-content: center
+      width: 50%
+
+    .loginFlexContainer
+      display: flex
+      justify-content: flex-end
+      width: 50%
 
     .userButtonsContainer
-      margin-left: 100px
       align-items: center
       justify-content: center
       display: flex
       border-left: 1px solid #ebebeb
       height: 40px
+      margin-right: 15px
       @media(max-width: 600px)
         margin-left: 60px
       @media(max-width: 400px)
@@ -150,6 +265,7 @@
         border-right: 1px solid #ebebeb
 
       .userInfo
+        height: 100%
         display: flex
         justify-content: center
         align-items: center
@@ -160,7 +276,11 @@
           ul
             display: block
             position: absolute
-            top: 45px
+            top: 40px
+            color: #77838F
+            box-shadow: 0 5px 9px rgba(55,125,255,.075), 0 5px 9px rgba(119,131,143,.075)
+            border: 0 solid rgba(0,0,0,.15)
+            border-radius: .3125rem
 
         ul
           border: 1px solid #eee
@@ -175,12 +295,14 @@
             text-align: left
 
             &:hover
-              background: #f9fafb
+              background: #fafafa
+
+              span
+                color: #377dff
 
             span
               display: inline-block
               padding: 5px 15px
-              color: #333
               font-size: 16px
 
         img
@@ -199,8 +321,8 @@
       span
         padding: 0 15px
         color: #718888
-        font-weight: 400
-        font-size: 14px
+        font-weight: 500
+        font-size: 13.5px
         border-right: 1px solid #ebebeb
 
     .numberContainer
@@ -212,7 +334,6 @@
       padding: 0 15px
       border-right: 1px solid #ebebeb
       border-left: 1px solid #ebebeb
-      margin-left: 120px
       height: 40px
       @media(max-width: 600px)
         margin-left: 10px
@@ -220,10 +341,12 @@
         padding: 0 5px
         margin-left: 0
 
-      span
-        color: #337ab7
-        font-size: 14px
+      a
+        color: #35A49C
+        font-size: 16px
         margin-left: 10px
+        text-decoration: none
+        font-weight: 300
         @media(max-width: 360px)
           font-size: 12px
 
