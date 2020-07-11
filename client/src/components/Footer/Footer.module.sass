@@ -1,60 +1,37 @@
-.footerContainer
+.Container
   width: 100%
+  background-color: #2B3030
 
-  .bottomFooterContainer
-    padding: 40px
+  .headerSection
+    padding: 86px 0
     box-sizing: border-box
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: center
-    background: #232828
+    @media (max-width: 992px)
+      display: none
 
-    .bottomFooterWrapper
-      width: 80%
-      display: flex
-      flex-direction: row
-      justify-content: space-between
+      .topWidth
 
-      @media (max-width: 768px)
-        flex-direction: column
+        ul
+          padding-bottom: 40px
 
-      .logo
-        display: flex
-        flex-direction: row
-        justify-content: center
-        align-items: center
 
-        span
-          float: left
-          padding: 10px 0 10px 30px
-          margin: 0 0 5px 33px
-          border-left: 1px solid #3d4141
-          font-size: 14px
-          color: #666868
+  .widthContainer
+    margin: 0 auto
+    @media (min-width: 768px)
+      width: 750px
 
-      .socialLinks
-        display: flex
-        flex-direction: row
-        justify-content: center
-        align-items: center
+    @media (min-width: 992px)
+      width: 970px
 
-        .social
-          display: flex
-          justify-content: center
-          align-items: center
-          height: 40px
-          width: 40px
-          border: 1px solid #fff
-          border-radius: 100%
-          margin-left: 15px
+    @media (min-width: 1200px)
+      width: 1170px
 
-  .footerTop
+    @media (max-width: 1050px)
+      width: 100%
+
+  .top
     width: 100%
-    background-color: #2B3030
-    padding: 80px 0
     color: white
-    font-family: 'Raleway',sans-serif
+    font-family: 'Lato',sans-serif
 
     div
       margin: 0 auto
@@ -63,36 +40,100 @@
       align-items: baseline
       flex-wrap: wrap
       justify-content: space-around
-      @media (min-width: 768px)
-        width: 750px
-
-      @media (min-width: 992px)
-        width: 970px
-
-      @media (min-width: 1200px)
-        width: 1170px
+      @media (max-width: 1050px)
+        margin: 0
 
       div
         display: flex
         flex: 1
-        min-width: 250px
+        min-width: 200px
         max-width: 300px
         flex-direction: column
-        padding: 15px
+        padding: 0 15px
 
         h4
           font-size: 16px
-          color: #fff
+          color: #BFC0C0
           display: block
           padding-bottom: 20px
           margin-bottom: 0
 
-        a
+        .lastItem
+          margin-top: 25px
+          padding-bottom: 15px
+
+
+        li
           padding-bottom: 7px
-          font-size: 14px
-          text-decoration: none
-          color: #767979
 
-        a:hover
-          color: rgb(249, 118, 75)
+          a
+            font-size: 14px
+            text-decoration: none
+            color: #767979
 
+          a:hover
+            color: rgb(249, 118, 75)
+
+
+    .topHeader
+      padding-bottom: 43px
+      font-family: 'Raleway',sans-serif
+      font-weight: 600
+      color: #abadad
+
+      div
+        @media (max-width: 1200px)
+          min-width: 45%
+
+  .shopper
+    font-size: 14px
+    text-decoration: none
+    color: #767979
+
+    &:hover
+      color: rgb(249, 118, 75)
+
+
+  .featuresHeader
+    font-size: 20px
+    color: #fff
+    font-family: 'Lato', sans-serif
+    font-weight: bold
+    padding-bottom: 35px
+    padding-top: 7px
+    border-bottom: 1px solid #555959
+    margin: 0 15px 20px
+
+
+  .bottom
+    padding: 40px 0 25px
+    background-color: #232828
+    display: flex
+
+    .bottomContainer
+      display: flex
+      justify-content: space-between
+      box-sizing: border-box
+      padding: 0 15px
+
+      .copyright
+        padding: 10px 0 10px 30px
+        margin: 0 0 5px 33px
+        border-left: 1px solid #3d4141
+        font-size: 14px
+        color: #666868
+
+      .socialLinks
+        display: flex
+
+        li
+
+          margin: 0 5px 0 15px
+          width: 40px
+          height: 40px
+          border-radius: 50%
+          border: 1px solid #fff
+          background-color: #666868
+          display: flex
+          align-items: center
+          justify-content: center
