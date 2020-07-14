@@ -125,10 +125,11 @@ class Header extends React.Component{
                                     </a>
                                 </li>
                                 <li>
-                                    <span>NAME IDEAS</span>
-                                    <Icon path={mdiChevronDown}
-                                         size={0.7}
-                                         color="#CCCCCC"/>
+                                    <span>NAME IDEAS
+                                        <Icon path={mdiChevronDown}
+                                             size={0.7}
+                                             color="#CCCCCC"/>
+                                     </span>
                                     <ul>
                                         <li><a href="http://www.google.com">Beauty</a></li>
                                         <li><a href="http://www.google.com">Consulting</a></li>
@@ -143,10 +144,11 @@ class Header extends React.Component{
                                     </ul>
                                 </li>
                                 <li>
-                                    <span>CONTESTS</span>
-                                    <Icon path={mdiChevronDown}
-                                          size={0.7}
-                                          color="#CCCCCC"/>
+                                    <span>CONTESTS
+                                        <Icon path={mdiChevronDown}
+                                              size={0.7}
+                                              color="#CCCCCC"/>
+                                     </span>
                                     <ul>
                                         <li><Link to='/howItWorks'>HOW IT WORKS</Link></li>
                                         <li><a href="http://www.google.com">PRICING</a></li>
@@ -160,10 +162,11 @@ class Header extends React.Component{
                                     </ul>
                                 </li>
                                 <li>
-                                    <span>Our Work</span>
-                                    <Icon path={mdiChevronDown}
-                                          size={0.7}
-                                          color="#CCCCCC"/>
+                                    <span>Our Work
+                                        <Icon path={mdiChevronDown}
+                                              size={0.7}
+                                              color="#CCCCCC"/>
+                                     </span>
                                     <ul>
                                         <li><a href="http://www.google.com">NAMES</a></li>
                                         <li><a href="http://www.google.com">TAGLINES</a></li>
@@ -174,10 +177,11 @@ class Header extends React.Component{
                                     </ul>
                                 </li>
                                 <li>
-                                    <span>Names For Sale</span>
-                                    <Icon path={mdiChevronDown}
-                                          size={0.7}
-                                          color="#CCCCCC"/>
+                                    <span>Names For Sale
+                                        <Icon path={mdiChevronDown}
+                                              size={0.7}
+                                              color="#CCCCCC"/>
+                                     </span>
                                     <ul>
                                         <li><a href="http://www.google.com">POPULAR NAMES</a></li>
                                         <li><a href="http://www.google.com">SHORT NAMES</a></li>
@@ -190,10 +194,11 @@ class Header extends React.Component{
                                     </ul>
                                 </li>
                                 <li>
-                                    <span>Blog</span>
-                                    <Icon path={mdiChevronDown}
-                                          size={0.7}
-                                          color="#CCCCCC"/>
+                                    <span>Blog
+                                        <Icon path={mdiChevronDown}
+                                              size={0.7}
+                                              color="#CCCCCC"/>
+                                     </span>
                                     <ul>
                                         <li><a href="http://www.google.com">ULTIMATE NAMING GUIDE</a></li>
                                         <li><a href="http://www.google.com">POETIC DEVICES IN BUSINESS NAMING</a></li>

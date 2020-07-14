@@ -116,15 +116,19 @@
             padding: 0
           @media (max-width: 760px)
             border-top: 2px solid #ddd
-            padding: 20px 0 20px 15px
+            padding: 20px 0 20px 0
             margin-left: 30px
             width: 100%
             flex-direction: column
             align-items: flex-start
 
+
           .menuPhone
             @media (min-width: 760px)
               display: none
+
+            svg
+              padding-left: 15px
 
             a
               text-decoration: none
@@ -143,13 +147,21 @@
               margin-right: 5px
             @media(max-width: 830px)
               margin-right: 0
+            @media(max-width: 760px)
+              flex-direction: column
+              align-items: flex-start
             @media(max-width: 700px)
               width: 100%
               padding: 0 15px
 
+            span
+              display: flex
+              align-items: center
+
             &:hover
               span
-                color: #f27e51
+                @media (min-width: 760px)
+                  color: #f27e51
 
               ul
                 display: block
@@ -159,6 +171,14 @@
                 top: 70px
                 background-color: white
                 box-shadow: 0 6px 12px 0 rgba(0,0,0,0.176)
+                @media (max-width: 760px)
+                  position: static
+                  box-shadow: none
+                  background-color: #eee
+                  font-weight: 500
+                  font-size: 12px
+                  color: #333
+
                 @media(max-width: 700px)
                   top: auto
                   left: 145px
@@ -169,6 +189,8 @@
               width: 160px
               display: none
               border: 1px solid #dadada
+              @media (max-width: 760px)
+                width: 100vw
 
               .divider
                 height: 1px
@@ -183,18 +205,27 @@
                 padding: 10px 15px
                 display: flex
                 justify-content: flex-start
+                @media (max-width: 760px)
+                  padding: 10px 0 10px 10px
 
                 &:hover
-                  background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%)
+                  @media (min-width: 760px)
+                    background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%)
 
                   a
-                    color: #f27e51
+                    @media (min-width: 760px)
+                      color: #f27e51
 
                 a
                   font-size: 11px
                   text-decoration: none
                   text-transform: uppercase
                   color: #666
+                  @media (max-width: 760px)
+                    font-size: 12px
+                    font-family: 'Lato', sans-serif
+                    font-weight: 400
+                    color: #333
 
             span
               color: #495d8b
@@ -208,7 +239,7 @@
                 text-shadow: 0 -1px 0 rgba(0, 0, 0, .25)
               @media (max-width: 760px)
                 color: #333
-                padding: 10px 0
+                padding: 8px 0 8px 15px
                 letter-spacing: 1px
 
               a
