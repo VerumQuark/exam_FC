@@ -1,0 +1,271 @@
+.body
+  padding-top: 5px
+  font-family: 'Raleway', sans-serif
+
+.widthContainer
+  margin: 0 auto
+  width: 1170px
+  @media (max-width: 1200px)
+    width: 970px
+
+  @media (max-width: 1150px)
+    width: 100%
+
+  .headerSection
+    display: flex
+    padding: 80px 0
+    font-family: "Raleway", sans-serif
+    @media (max-width: 760px)
+      flex-wrap: wrap
+
+    iframe
+      @media (max-width: 990px)
+        height: auto
+      @media (max-width: 760px)
+        height: 412px
+
+    & > *
+      width: 50%
+      padding: 0 15px
+      @media (max-width: 990px)
+        width: 45%
+      @media (max-width: 760px)
+        width: 100%
+
+    .description
+
+      h2
+        font-size: 36px
+        font-weight: 600
+        color: #515b5f
+        line-height: 40px
+        padding-bottom: 45px
+        @media (max-width: 990px)
+          font-size: 22px
+          line-height: 25px
+          padding-bottom: 20px
+
+      p
+        color: #333
+        font-weight: 500
+        font-size: 16px
+        line-height: 25px
+
+  .stepsSection
+    &Header
+      font-size: 36px
+      font-weight: 700
+      text-align: center
+      padding: 30px 0 50px 0
+      margin-bottom: 20px
+      color: #515b5f
+
+    &Container
+      display: flex
+      justify-content: center
+      padding: 25px 0
+      margin-bottom: 15px
+      margin-top: 15px
+      @media (max-width: 990px)
+        justify-content: normal
+        flex-wrap: wrap
+
+      .stepContainer
+        width: 16.66666667%
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        box-sizing: border-box
+        padding: 0 15px
+        @media (max-width: 990px)
+          width: 50%
+        @media (max-width: 760px)
+          width: 100%
+
+        &:first-child .stepCircle
+          background-color: #28d2d0
+          color: #fff
+
+        .stepCircle
+
+          font-weight: 700
+          font-size: 30px
+          text-align: center
+          line-height: 90px
+          background-color: #ebebeb
+          color: #000
+          width: 90px
+          border-radius: 90px
+
+          &:hover
+            background-color: #28d2d0
+            color: #fff
+
+        .stepTitle
+          font-weight: 700
+          font-size: 16px
+          padding: 20px 0 40px 0
+          color: #515b5f
+
+        .stepText
+          font-size: 14px
+          line-height: 18px
+          font-weight: 400
+
+  .startContestSection
+    margin: 30px -53px 45px
+    background: #28d2d0
+    text-align: center
+    padding: 35px 0
+
+    .startContestBtn
+      display: block
+      padding: 16px 0
+      border: 2px solid #fff
+      font-weight: bold
+      color: #fff
+      border-radius: 5px
+      font-size: 20px
+      text-align: center
+      width: 235px
+      margin: 0 auto
+      text-transform: uppercase
+      text-decoration: none
+      box-sizing: border-box
+
+  .FAQSection
+    font-family: "Raleway", sans-serif
+    padding: 0 10px
+
+    &Header
+      position: relative
+      overflow: hidden
+      border-bottom: 1px solid #e1e1e1
+      padding: 20px 10px
+      display: flex
+      box-sizing: border-box
+
+      &Icon
+        border: 2px solid #28d2d0
+        color: #28d2d0
+        background: #fff
+        font-size: 36px
+        line-height: 60px
+        text-align: center
+        width: 60px
+        height: 60px
+        border-radius: 60px
+        box-sizing: border-box
+
+      &Title
+        color: #515b5f
+        padding: 10px 15px 20px
+        margin-bottom: 20px
+        font-weight: bold
+        font-size: 30px
+
+    &List
+      padding: 0 10px
+      line-height: 20px
+      font-size: 15px
+
+      &Elem
+        padding: 15px 15px
+        margin: 10px 0
+
+        &:nth-child(even)
+          background-color: #fafafa
+
+        &Title
+          font-size: 18px
+          padding: 15px 0
+          font-weight: bold
+          line-height: 18px
+          color: #515b5f
+
+        &Text
+          margin-top: 15px
+          letter-spacing: 0.4px
+
+      a
+        color: #28d2d0
+
+      .boldList
+        margin-top: 15px
+
+        strong
+          font-weight: bold
+          color: #333
+
+      .regularList
+        padding: 0 25px
+        margin-top: 20px
+        font-size: 14px
+
+.questionSection
+  background: #455a89
+  padding: 35px 0
+
+  &Container
+    display: flex
+    align-items: end
+    @media (max-width: 1200px)
+      flex-direction: column
+
+  &MailIcon
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #fff
+    border-radius: 200px
+    width: 100px
+    height: 100px
+    margin-right: 40px
+    margin-left: 40px
+    @media (max-width: 1200px)
+      display: none
+
+  &TextContainer
+    width: 62.25%
+    @media (max-width: 1200px)
+      width: 55.5%
+      padding: 0 30px
+      box-sizing: border-box
+    @media (max-width: 760px)
+      width: 100%
+      text-align: center
+
+    &Title
+      font-size: 25px
+      color: #fff
+      font-weight: 700
+      padding-top: 12px
+      padding-bottom: 40px
+
+
+    p
+      font-size: 20px
+      color: #fff
+
+    a
+      color: #f18762
+      font-weight: 500
+      text-decoration: none
+
+  &Btn
+    float: right
+    padding: 22px 40px
+    border: 2px solid #fff
+    margin-left: 30px
+    margin-top: 8px
+    font-weight: 700
+    color: #fff
+    border-radius: 5px
+    font-size: 20px
+    text-decoration: none
+    @media (max-width: 1200px)
+      align-self: flex-end
+    @media (max-width: 1200px)
+      margin-right: 15px
+

@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard/Dashboard'
 import PrivateHoc from './components/PrivateHoc/PrivateHoc';
 import NotFound from './components/NotFound/NotFound';
 import Home from './pages/Home/Home';
+import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import OnlyNotAuthorizedUserHoc from './components/OnlyNotAuthorizedUserHoc/OnlyNotAuthorizedUserHoc';
 import ContestPage from './pages/ContestPage/ContestPage';
 import UserProfile from './pages/UserProfile/UserProfile';
@@ -18,7 +19,6 @@ import ContestCreationPage from './pages/ContestCreation/ContestCreationPage';
 import CONSTANTS from './constants';
 import browserHistory from './browserHistory';
 import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
-
 
 
 class App extends Component {
@@ -38,6 +38,7 @@ class App extends Component {
                 />
                 <Switch>
                     <Route exact path='/' component={Home}/>
+                    <Route exact path='/howItWorks' component={HowItWorks}/>
                     <Route exact path='/login' component={OnlyNotAuthorizedUserHoc(LoginPage)}/>
                     <Route exact path='/registration' component={OnlyNotAuthorizedUserHoc(RegistrationPage)}/>
                     <Route exact path='/payment' component={PrivateHoc(Payment)}/>
