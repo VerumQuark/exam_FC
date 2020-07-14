@@ -16,10 +16,10 @@
 
   .widthContainer
     margin: 0 auto
-    @media (min-width: 768px)
+    @media (max-width: 768px)
       width: 750px
 
-    @media (min-width: 992px)
+    @media (max-width: 992px)
       width: 970px
 
     @media (min-width: 1200px)
@@ -85,7 +85,14 @@
         @media (max-width: 1200px)
           min-width: 45%
 
+        @media (max-width: 1150px)
+          margin-left: 0
+
+          ul
+            padding-bottom: 40px
+
   .shopper
+    padding-left: 15px
     font-size: 14px
     text-decoration: none
     color: #767979
@@ -109,6 +116,8 @@
     padding: 40px 0 25px
     background-color: #232828
     display: flex
+    @media (max-width: 1150px)
+      display: block
 
     .bottomContainer
       display: flex

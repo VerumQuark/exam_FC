@@ -12,7 +12,7 @@ class Footer extends Component {
             <div key={item.title}>
                 <h4>{item.title}</h4>
                 <ul>
-                    {item.items.map(i => <li><a key={i} href="https://google.com">{i}</a></li>)}
+                    {item.items.map(i => <li key={i}><a href="https://google.com">{i}</a></li>)}
                 </ul>
             </div>
         );
@@ -23,21 +23,21 @@ class Footer extends Component {
             <div key={item.title}>
                 <h4>{item.title}</h4>
                 <ul>
-                    {item.items.map(i => <li><a key={i} href="https://google.com">{i}</a></li>)}
+                    {item.items.map(i => <li key={i}><a href="https://google.com">{i}</a></li>)}
                 </ul>
                 <h4 className={styles.lastItem}>{item.nextItem.title}</h4>
                 <ul>
-                    {item.nextItem.items.map(i => <li><a key={i} href="https://google.com">{i}</a></li>)}
+                    {item.nextItem.items.map(i => <li key={i}><a href="https://google.com">{i}</a></li>)}
                 </ul>
             </div>
         );
     };
 
-    featuredCategoriesItemsRender = (item) => {
+    featuredCategoriesItemsRender = (item, index) => {
         return (
-            <div>
+            <div key={index}>
                 <ul>
-                    {item.map(i => <li><a key={i} href="https://google.com">{i}</a></li>)}
+                    {item.map(i => <li key={i}><a href="https://google.com">{i}</a></li>)}
                 </ul>
             </div>
         );
@@ -53,7 +53,7 @@ class Footer extends Component {
     };
 
     featuredCategoriesRender() {
-        return CONSTANTS.FooterFeaturedCategories.map(item => this.featuredCategoriesItemsRender(item))
+        return CONSTANTS.FooterFeaturedCategories.map((item, index) => this.featuredCategoriesItemsRender(item, index))
     };
 
     render() {
