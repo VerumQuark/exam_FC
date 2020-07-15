@@ -160,15 +160,15 @@ const HowItWorks = (props) => {
 
                   <p>
                     Check out our&nbsp;
-                    <a href={"google.com"}>FAQs</a>
+                    <a href={"http://www.google.com"}>FAQs</a>
                     &nbsp;or send us a&nbsp;
-                    <a href={"google.com"}>message</a>
+                    <a href={"http://www.google.com"}>message</a>
                     &nbsp;. For assistance with launching a contest, you can also call us at (877) 355-3585 or schedule a&nbsp;
-                    <a href={"google.com"}>Branding Consultation</a>
+                    <a href={"http://www.google.com"}>Branding Consultation</a>
                   </p>
                 </div>
 
-                <a className={styles.questionSectionBtn} href="google.com">GET IN TOUCH</a>
+                <a className={styles.questionSectionBtn} href="http://www.google.com">GET IN TOUCH</a>
 
               </div>
             </section>
