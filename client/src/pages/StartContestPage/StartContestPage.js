@@ -12,6 +12,11 @@ import Header from "../../components/Header/Header";
 
 const StartContestPage = (props) => {
 
+    if (props.userStore.data.role !== CONSTANTS.CUSTOMER) {
+        props.history.replace('/');
+    }
+
+
     const setBundle = (bundleStr) => {
         const array = bundleStr.toLowerCase().split('+');
         const bundleList = {};
