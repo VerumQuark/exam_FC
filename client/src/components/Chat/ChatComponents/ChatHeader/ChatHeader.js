@@ -1,8 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {backToDialogList, changeChatFavorite, changeChatBlock} from "../../../../actions/actionCreator";
-import styles from './ChatHeader.module.sass';
-import CONSTANTS from '../../../../constants';
+import styles     from './ChatHeader.module.sass';
+import CONSTANTS  from '../../../../constants/constants.js';
 import classNames from 'classnames';
 
 const ChatHeader = (props) => {

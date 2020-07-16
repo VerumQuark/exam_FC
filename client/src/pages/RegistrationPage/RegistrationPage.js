@@ -6,7 +6,7 @@ import styles from './RegistrationPage.module.sass';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { clearErrorSignUpAndLogin } from '../../actions/actionCreator';
-import CONSTANTS from '../../constants';
+import CONSTANTS                    from '../../constants/constants.js';
 
 const RegistrationPage = (props) => {
   props.clearError();

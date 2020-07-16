@@ -8,8 +8,8 @@ import { Field, reduxForm } from 'redux-form';
 import FormInput from '../FormInput/FormInput';
 import RoleInput from '../RoleInput/RoleInput';
 import AgreeTermOfServiceInput
-  from '../AgreeTermOfServiceInput/AgreeTermOfServiceInput';
-import CONSTANTS from '../../constants';
+                       from '../AgreeTermOfServiceInput/AgreeTermOfServiceInput';
+import CONSTANTS       from '../../constants/constants.js';
 import customValidator from '../../validators/validator';
 import Schems from '../../validators/validationSchems';
 

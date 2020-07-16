@@ -2,8 +2,8 @@ import React from 'react';
 import {connect} from 'react-redux';
 import styles from './ContestSideBar.module.sass';
 import {withRouter} from 'react-router-dom';
-import CONSTANTS from '../../constants';
-import moment from 'moment';
+import CONSTANTS    from '../../constants/constants.js';
+import moment       from 'moment';
 
 
 const ContestSideBar = (props) => {

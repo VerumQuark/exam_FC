@@ -1,5 +1,5 @@
-import React from 'react';
-import CONSTANTS from '../../constants';
+import React             from 'react';
+import CONSTANTS         from '../../constants/constants.js';
 import CustomerDashboard from '../../components/CustomerDashboard/CustomerDashboard';
 import CreatorDashboard from '../../components/CreatorDashboard/CreatorDashboard';
 import Header from '../../components/Header/Header';

@@ -3,8 +3,8 @@ import {Field, reduxForm} from 'redux-form';
 import {connect} from 'react-redux';
 import UpdateUserInfoForm from '../../components/UpdateUserInfoForm/UpdateUserInfoForm';
 import {updateUserData, changeEditModeOnUserProfile} from '../../actions/actionCreator';
-import CONSTANTS from '../../constants';
-import styles from './UserInfo.module.sass';
+import CONSTANTS                                     from '../../constants/constants.js';
+import styles                                        from './UserInfo.module.sass';
 
 const UserInfo = (props) => {
 

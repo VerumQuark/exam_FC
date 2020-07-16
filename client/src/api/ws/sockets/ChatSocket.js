@@ -1,5 +1,5 @@
-import WebSocket from './WebSocket';
-import CONTANTS from "../../../constants";
+import WebSocket                              from './WebSocket';
+import CONTANTS                               from "../../../constants/constants.js";
 import {addMessage, changeBlockStatusInStore} from "../../../actions/actionCreator";
 import isEqual from 'lodash/isEqual';
 

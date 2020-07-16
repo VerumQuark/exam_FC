@@ -1,12 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import CONSTANTS from '../../../../constants';
+import CONSTANTS from '../../../../constants/constants.js';
 import {
     goToExpandedDialog,
     changeChatFavorite,
     changeChatBlock,
     changeShowAddChatToCatalogMenu
-} from "../../../../actions/actionCreator";
+}                from "../../../../actions/actionCreator";
 import moment from 'moment';
 import DialogBox from '../DialogBox/DialogBox';
 import styles from './DialogList.module.sass';

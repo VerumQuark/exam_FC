@@ -2,7 +2,7 @@ import React                                            from 'react';
 import styles                                           from './Header.module.sass';
 import { connect }                                      from 'react-redux';
 import { Link, withRouter }                             from 'react-router-dom';
-import CONSTANTS                                        from '../../constants';
+import CONSTANTS                                        from '../../constants/constants.js';
 import { getUserAction, clearUserStore, headerRequest } from '../../actions/actionCreator';
 import Icon                                             from '@mdi/react';
 import { mdiPhone, mdiChevronDown }                     from '@mdi/js';

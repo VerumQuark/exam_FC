@@ -1,5 +1,5 @@
-import React from 'react';
-import CONSTANTS from '../../constants';
+import React       from 'react';
+import CONSTANTS   from '../../constants/constants.js';
 import { connect } from 'react-redux';
 import { getDataForContest } from '../../actions/actionCreator';
 import { withRouter } from 'react-router-dom';

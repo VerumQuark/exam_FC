@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 import {connect} from 'react-redux';
-import styles from './UserProfile.module.sass';
-import CONSTANTS from '../../constants';
-import UserInfo from '../../components/UserInfo/UserInfo';
+import styles    from './UserProfile.module.sass';
+import CONSTANTS from '../../constants/constants.js';
+import UserInfo  from '../../components/UserInfo/UserInfo';
 import PayForm from '../../components/PayForm/PayForm';
 import classNames from 'classnames';
 import {cashOut, changeProfileModeView, clearPaymentStore} from '../../actions/actionCreator';

@@ -1,3 +1,8 @@
+$sm: 760px
+$md: 990px
+$lg: 1150px
+$xl: 1200px
+
 .body
   padding-top: 5px
   font-family: 'Raleway', sans-serif
@@ -5,31 +10,30 @@
 .widthContainer
   margin: 0 auto
   width: 1170px
-  @media (max-width: 1200px)
+  @media (max-width: $xl)
     width: 970px
 
-  @media (max-width: 1150px)
+  @media (max-width: $lg)
     width: 100%
 
   .headerSection
     display: flex
     padding: 80px 0
-    font-family: "Raleway", sans-serif
-    @media (max-width: 760px)
+    @media (max-width: $sm)
       flex-wrap: wrap
 
     iframe
-      @media (max-width: 990px)
+      @media (max-width: $md)
         height: auto
-      @media (max-width: 760px)
+      @media (max-width: $sm)
         height: 412px
 
     & > *
       width: 50%
       padding: 0 15px
-      @media (max-width: 990px)
+      @media (max-width: $md)
         width: 45%
-      @media (max-width: 760px)
+      @media (max-width: $sm)
         width: 100%
 
     .description
@@ -40,7 +44,7 @@
         color: #515b5f
         line-height: 40px
         padding-bottom: 45px
-        @media (max-width: 990px)
+        @media (max-width: $md)
           font-size: 22px
           line-height: 25px
           padding-bottom: 20px
@@ -66,7 +70,7 @@
       padding: 25px 0
       margin-bottom: 15px
       margin-top: 15px
-      @media (max-width: 990px)
+      @media (max-width: $md)
         justify-content: normal
         flex-wrap: wrap
 
@@ -78,9 +82,9 @@
         text-align: center
         box-sizing: border-box
         padding: 0 15px
-        @media (max-width: 990px)
+        @media (max-width: $md)
           width: 50%
-        @media (max-width: 760px)
+        @media (max-width: $sm)
           width: 100%
 
         &:first-child .stepCircle
@@ -135,7 +139,6 @@
       box-sizing: border-box
 
   .FAQSection
-    font-family: "Raleway", sans-serif
     padding: 0 10px
 
     &Header
@@ -165,44 +168,6 @@
         font-weight: bold
         font-size: 30px
 
-    &List
-      padding: 0 10px
-      line-height: 20px
-      font-size: 15px
-
-      &Elem
-        padding: 15px 15px
-        margin: 10px 0
-
-        &:nth-child(even)
-          background-color: #fafafa
-
-        &Title
-          font-size: 18px
-          padding: 15px 0
-          font-weight: bold
-          line-height: 18px
-          color: #515b5f
-
-        &Text
-          margin-top: 15px
-          letter-spacing: 0.4px
-
-      a
-        color: #28d2d0
-
-      .boldList
-        margin-top: 15px
-
-        strong
-          font-weight: bold
-          color: #333
-
-      .regularList
-        padding: 0 25px
-        margin-top: 20px
-        font-size: 14px
-
 .questionSection
   background: #455a89
   padding: 35px 0
@@ -210,7 +175,7 @@
   &Container
     display: flex
     align-items: end
-    @media (max-width: 1200px)
+    @media (max-width: $xl)
       flex-direction: column
 
   &MailIcon
@@ -223,16 +188,16 @@
     height: 100px
     margin-right: 40px
     margin-left: 40px
-    @media (max-width: 1200px)
+    @media (max-width: $xl)
       display: none
 
   &TextContainer
     width: 62.25%
-    @media (max-width: 1200px)
+    @media (max-width: $xl)
       width: 55.5%
       padding: 0 30px
       box-sizing: border-box
-    @media (max-width: 760px)
+    @media (max-width: $sm)
       width: 100%
       text-align: center
 
@@ -264,8 +229,8 @@
     border-radius: 5px
     font-size: 20px
     text-decoration: none
-    @media (max-width: 1200px)
+    @media (max-width: $xl)
       align-self: flex-end
-    @media (max-width: 1200px)
+    @media (max-width: $xl)
       margin-right: 15px
 

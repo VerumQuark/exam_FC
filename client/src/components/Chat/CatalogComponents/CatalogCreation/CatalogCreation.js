@@ -1,11 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import CONSTANTS from '../../../../constants';
+import CONSTANTS from '../../../../constants/constants.js';
 import {
     changeTypeOfChatAdding,
     changeShowAddChatToCatalogMenu,
     getCatalogList
-} from '../../../../actions/actionCreator';
+}                from '../../../../actions/actionCreator';
 import styles from './CatalogCreation.module.sass';
 import AddToCatalog from '../AddToCatalog/AddToCatalog';
 import classNames from 'classnames';

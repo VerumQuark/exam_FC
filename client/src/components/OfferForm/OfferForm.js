@@ -1,5 +1,5 @@
-import React from 'react';
-import CONTANTS from '../../constants';
+import React     from 'react';
+import CONTANTS  from '../../constants/constants.js';
 import {connect} from 'react-redux';
 import {setOffer, clearAddOfferError} from '../../actions/actionCreator';
 import {withRouter} from 'react-router-dom';

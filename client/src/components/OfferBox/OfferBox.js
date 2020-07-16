@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './OfferBox.module.sass';
-import CONSTANTS from '../../constants';
+import styles    from './OfferBox.module.sass';
+import CONSTANTS from '../../constants/constants.js';
 import {connect} from 'react-redux';
 import Rating from 'react-rating';
 import {

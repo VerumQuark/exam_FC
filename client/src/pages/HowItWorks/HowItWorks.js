@@ -4,11 +4,12 @@ import SpinnerLoader       from '../../components/Spinner/Spinner';
 import Footer              from '../../components/Footer/Footer';
 import { connect }         from 'react-redux';
 import styles              from './HowItWorks.module.sass';
-import LOCAL_CONSTANTS     from './HowItWorksConstants';
+import LOCAL_CONSTANTS     from '../../constants/HowItWorksConstants.js';
 import { Link }            from 'react-router-dom';
 import Icon                from '@mdi/react'
 import { mdiEmailOutline } from '@mdi/js';
 import ScrollToTop         from '../../components/ScrollToTop/ScrollToTop.js';
+import FAQ                 from '../../components/FAQ/FAQ.js';
 
 const stepsItemsRender = (item, index) => {
   return (
@@ -27,68 +28,6 @@ const stepsItemsRender = (item, index) => {
 
 const stepsRender = () => {
   return LOCAL_CONSTANTS.steps.map( (item, index) => stepsItemsRender( item, index ) );
-};
-
-const FAQTextItemRender = (item, index) => {
-  return <Fragment key={index}>
-    {item.text}
-    <a key={index} href={item.link}>{item.linkText}</a>
-  </Fragment>;
-};
-
-const FAQTextRender = (textArr) => {
-  return textArr.map( (item, index) => FAQTextItemRender( item, index ) );
-};
-
-const FAQBoldListRender = (item, index) => {
-  return <p key={index} className={styles.boldList}>
-    <strong>
-      {item.title}
-    </strong>
-    {item.text}
-  </p>;
-};
-
-const FAQRegularListRender = (item) => {
-  return <ul className={styles.regularList}>
-    {item.regularList.map( (item, index) => FAQRegularListItemsRender( item, index ) )}
-  </ul>;
-};
-
-const FAQRegularListItemsRender = (item, index) => {
-  return <li key={index}>
-    -
-    <a href={item.link}>
-      {item.linkText}
-    </a>
-  </li>;
-};
-
-const FAQListRender = (item) => {
-  if (item.hasOwnProperty('boldList')) {
-    return item.boldList.map( (item, index) => FAQBoldListRender( item, index ) );
-
-  } else if (item.hasOwnProperty('regularList')) {
-    return <>{FAQRegularListRender(item)}</>;
-  }
-};
-
-const FAQItemsRender = (item, index) => {
-  return (
-      <li key={index} className={styles.FAQSectionListElem}>
-        <h4 className={styles.FAQSectionListElemTitle}>
-          {item.title}
-        </h4>
-        <p className={styles.FAQSectionListElemText}>
-          {FAQTextRender( item.textArr )}
-        </p>
-        {FAQListRender( item )}
-      </li>
-    );
-};
-
-const FAQRender = () => {
-  return LOCAL_CONSTANTS.FAQ.map( (item, index) => FAQItemsRender( item, index ) );
 };
 
 const HowItWorks = (props) => {
@@ -139,9 +78,7 @@ const HowItWorks = (props) => {
                     Frequently Asked Questions
                   </h5>
                 </header>
-                <ul className={styles.FAQSectionList}>
-                  {FAQRender()}
-                </ul>
+                <FAQ/>
               </section>
             </div>
 

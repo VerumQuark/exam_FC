@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from "./DialogBox.module.sass";
-import CONSTANTS from "../../../../constants";
+import styles     from "./DialogBox.module.sass";
+import CONSTANTS  from "../../../../constants/constants.js";
 import classNames from 'classnames';
 
 

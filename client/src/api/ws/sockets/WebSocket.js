@@ -1,4 +1,4 @@
-import CONSTANTS from '../../../constants';
+import CONSTANTS      from '../../../constants/constants.js';
 import socketIoClient from 'socket.io-client';
 
 

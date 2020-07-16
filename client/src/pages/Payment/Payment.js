@@ -4,9 +4,9 @@ import {Redirect} from 'react-router-dom';
 import {payRequest, clearPaymentStore} from '../../actions/actionCreator';
 import PayForm from '../../components/PayForm/PayForm';
 import styles from './Payment.module.sass';
-import isEmpty from 'lodash/isEmpty';
-import CONSTANTS from '../../constants';
-import Error from '../../components/Error/Error';
+import isEmpty   from 'lodash/isEmpty';
+import CONSTANTS from '../../constants/constants.js';
+import Error     from '../../components/Error/Error';
 
 const Payment = (props) => {
 

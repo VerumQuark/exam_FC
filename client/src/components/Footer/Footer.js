@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import styles from './Footer.module.sass';
-import CONSTANTS from '../../constants';
-import Icon from '@mdi/react'
+import styles    from './Footer.module.sass';
+import CONSTANTS from '../../constants/constants.js';
+import Icon      from '@mdi/react'
 import { mdiFacebook, mdiTwitter } from '@mdi/js'
 
 
